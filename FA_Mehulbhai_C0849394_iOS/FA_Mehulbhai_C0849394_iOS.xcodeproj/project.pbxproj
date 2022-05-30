@@ -13,6 +13,7 @@
 		BB5196D928447EC8004F2665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5196D728447EC8004F2665 /* Main.storyboard */; };
 		BB5196DB28447EC9004F2665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5196DA28447EC9004F2665 /* Assets.xcassets */; };
 		BB5196DE28447EC9004F2665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5196DC28447EC9004F2665 /* LaunchScreen.storyboard */; };
+		BB5196E6284485E3004F2665 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB5196E5284485E3004F2665 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BB5196DA28447EC9004F2665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB5196DD28447EC9004F2665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB5196DF28447EC9004F2665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5196E5284485E3004F2665 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				BB5196D528447EC8004F2665 /* ViewController.swift */,
 				BB5196D728447EC8004F2665 /* Main.storyboard */,
 				BB5196DA28447EC9004F2665 /* Assets.xcassets */,
+				BB5196E5284485E3004F2665 /* bg.jpg */,
 				BB5196DC28447EC9004F2665 /* LaunchScreen.storyboard */,
 				BB5196DF28447EC9004F2665 /* Info.plist */,
 			);
@@ -125,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5196E6284485E3004F2665 /* bg.jpg in Resources */,
 				BB5196DE28447EC9004F2665 /* LaunchScreen.storyboard in Resources */,
 				BB5196DB28447EC9004F2665 /* Assets.xcassets in Resources */,
 				BB5196D928447EC8004F2665 /* Main.storyboard in Resources */,
