@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vEf-uC-jyR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -27,7 +27,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bSi-54-AJ2">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="113.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-Fq-sBq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbZ-Fq-sBq" userLabel="F1">
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="113.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
@@ -38,7 +38,7 @@
                                                     <action selector="boardTapAction:" destination="vEf-uC-jyR" eventType="touchUpInside" id="do0-en-2lA"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRz-Kd-5gc">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRz-Kd-5gc" userLabel="F2">
                                                 <rect key="frame" x="118.5" y="0.0" width="113" height="113.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
@@ -49,7 +49,7 @@
                                                     <action selector="boardTapAction:" destination="vEf-uC-jyR" eventType="touchUpInside" id="w42-jy-elK"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbv-2g-Nff">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbv-2g-Nff" userLabel="F3">
                                                 <rect key="frame" x="236.5" y="0.0" width="113.5" height="113.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
@@ -65,7 +65,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="l7o-a9-xKG">
                                         <rect key="frame" x="0.0" y="118.5" width="350" height="113"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sf-DO-xyq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sf-DO-xyq" userLabel="S1">
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="113"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
@@ -76,7 +76,7 @@
                                                     <action selector="boardTapAction:" destination="vEf-uC-jyR" eventType="touchUpInside" id="CoM-bk-kyq"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9y-hY-4JS">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9y-hY-4JS" userLabel="S2">
                                                 <rect key="frame" x="118.5" y="0.0" width="113" height="113"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
@@ -87,7 +87,7 @@
                                                     <action selector="boardTapAction:" destination="vEf-uC-jyR" eventType="touchUpInside" id="sov-lx-JAv"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlV-wj-1jf">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlV-wj-1jf" userLabel="S3">
                                                 <rect key="frame" x="236.5" y="0.0" width="113.5" height="113"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
@@ -103,7 +103,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RRG-8b-RFq">
                                         <rect key="frame" x="0.0" y="236.5" width="350" height="113.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znp-zW-yff">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Znp-zW-yff" userLabel="T1">
                                                 <rect key="frame" x="0.0" y="0.0" width="113.5" height="113.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
@@ -114,7 +114,7 @@
                                                     <action selector="boardTapAction:" destination="vEf-uC-jyR" eventType="touchUpInside" id="5gq-Vo-E18"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wV-kT-tmh">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wV-kT-tmh" userLabel="T2">
                                                 <rect key="frame" x="118.5" y="0.0" width="113" height="113.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
@@ -125,7 +125,7 @@
                                                     <action selector="boardTapAction:" destination="vEf-uC-jyR" eventType="touchUpInside" id="7lU-ZP-Gfj"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvY-IP-C9w">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvY-IP-C9w" userLabel="T3">
                                                 <rect key="frame" x="236.5" y="0.0" width="113.5" height="113.5"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
@@ -187,18 +187,18 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="PlayerO" destination="LjV-K1-hcq" id="iqV-NZ-wyh"/>
-                        <outlet property="PlayerX" destination="piR-Wd-CJx" id="w5G-Fb-BNr"/>
-                        <outlet property="a1" destination="ZbZ-Fq-sBq" id="dxq-l0-oNY"/>
-                        <outlet property="a2" destination="QRz-Kd-5gc" id="N8x-dG-PKy"/>
-                        <outlet property="a3" destination="Cbv-2g-Nff" id="Scz-KC-6Jk"/>
-                        <outlet property="b1" destination="4Sf-DO-xyq" id="98x-Qe-iGo"/>
-                        <outlet property="b2" destination="g9y-hY-4JS" id="RB7-rl-rE0"/>
-                        <outlet property="b3" destination="qlV-wj-1jf" id="4au-gQ-Gf0"/>
-                        <outlet property="c1" destination="Znp-zW-yff" id="n03-H7-Czi"/>
-                        <outlet property="c2" destination="1wV-kT-tmh" id="vkw-nw-oxS"/>
-                        <outlet property="c3" destination="yvY-IP-C9w" id="pRa-X8-tXS"/>
-                        <outlet property="turnLabel" destination="Z5L-4h-TWR" id="OsS-Xv-8Mp"/>
+                        <outlet property="PlayerO" destination="LjV-K1-hcq" id="1MK-OA-NkJ"/>
+                        <outlet property="PlayerX" destination="piR-Wd-CJx" id="DR7-WV-haa"/>
+                        <outlet property="f1" destination="ZbZ-Fq-sBq" id="2t8-ol-wVI"/>
+                        <outlet property="f2" destination="QRz-Kd-5gc" id="DKd-V3-V0f"/>
+                        <outlet property="f3" destination="Cbv-2g-Nff" id="QFJ-4i-u6R"/>
+                        <outlet property="playerTurnLbl" destination="Z5L-4h-TWR" id="BmA-Qn-S3o"/>
+                        <outlet property="s1" destination="4Sf-DO-xyq" id="T55-3A-Wap"/>
+                        <outlet property="s2" destination="g9y-hY-4JS" id="nlL-Ft-b2G"/>
+                        <outlet property="s3" destination="qlV-wj-1jf" id="9hp-ZD-6eH"/>
+                        <outlet property="t1" destination="Znp-zW-yff" id="S1U-ZZ-1eH"/>
+                        <outlet property="t2" destination="1wV-kT-tmh" id="zCI-VS-Syq"/>
+                        <outlet property="t3" destination="yvY-IP-C9w" id="msJ-4J-KWT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3k5-Uj-N8G" sceneMemberID="firstResponder"/>

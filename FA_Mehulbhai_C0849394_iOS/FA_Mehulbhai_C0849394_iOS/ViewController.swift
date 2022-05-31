@@ -49,8 +49,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
         initializeGame()
     }
 
@@ -110,6 +108,7 @@ class ViewController: UIViewController {
     
     func addTurnToBoard(_ sender : UIButton) {
         if(sender.title(for: .normal) == nil) {
+            var turn = ""
             if(CurrentUserTurn == playerTurn.Nought) {
                 sender.setTitle(NOUGHT, for: .normal)
                 CurrentUserTurn = playerTurn.Cross
@@ -128,6 +127,8 @@ class ViewController: UIViewController {
             } else {
                 startPlayerTurn = "O"
             }
+            
+            
         }
     }
     
@@ -265,7 +266,6 @@ class ViewController: UIViewController {
                 self.resetGameBoard()
                 self.PlayerX.text = "Win X :"
                 self.PlayerO.text = "Win O :"
-              //  CoreDataHelp.instance.resetCoreData()
             }))
             self.present(alertControl, animated: true)
             
@@ -276,7 +276,6 @@ class ViewController: UIViewController {
                 self.resetGameBoard()
                 self.PlayerX.text = "Win X :"
                 self.PlayerO.text = "Win O :"
-            //    CoreDataHelp.instance.resetCoreData()
             }))
             self.present(alertc, animated: true)
             

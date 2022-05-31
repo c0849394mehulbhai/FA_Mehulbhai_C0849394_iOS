@@ -14,6 +14,7 @@
 		BB5196DB28447EC9004F2665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5196DA28447EC9004F2665 /* Assets.xcassets */; };
 		BB5196DE28447EC9004F2665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5196DC28447EC9004F2665 /* LaunchScreen.storyboard */; };
 		BB5196E6284485E3004F2665 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB5196E5284485E3004F2665 /* bg.jpg */; };
+		BB687E872845CA5B0077E0CE /* Mehul.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB687E852845CA5B0077E0CE /* Mehul.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BB5196DD28447EC9004F2665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB5196DF28447EC9004F2665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB5196E5284485E3004F2665 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		BB687E862845CA5B0077E0CE /* Mehul.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mehul.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				BB5196E5284485E3004F2665 /* bg.jpg */,
 				BB5196DC28447EC9004F2665 /* LaunchScreen.storyboard */,
 				BB5196DF28447EC9004F2665 /* Info.plist */,
+				BB687E852845CA5B0077E0CE /* Mehul.xcdatamodeld */,
 			);
 			path = FA_Mehulbhai_C0849394_iOS;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 			files = (
 				BB5196D628447EC8004F2665 /* ViewController.swift in Sources */,
 				BB5196D228447EC8004F2665 /* AppDelegate.swift in Sources */,
+				BB687E872845CA5B0077E0CE /* Mehul.xcdatamodeld in Sources */,
 				BB5196D428447EC8004F2665 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,6 +364,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB687E852845CA5B0077E0CE /* Mehul.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB687E862845CA5B0077E0CE /* Mehul.xcdatamodel */,
+			);
+			currentVersion = BB687E862845CA5B0077E0CE /* Mehul.xcdatamodel */;
+			path = Mehul.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BB5196C628447EC8004F2665 /* Project object */;
 }
