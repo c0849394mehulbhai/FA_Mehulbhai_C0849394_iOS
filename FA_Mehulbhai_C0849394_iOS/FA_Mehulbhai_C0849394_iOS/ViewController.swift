@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var playerTurnLbl: UILabel!
     
     var buttonBoard = [UIButton]()
+    var arrayButton : [Int] = []
     
     var NOUGHT = "0"
     var CROSS = "X"
@@ -63,6 +64,16 @@ class ViewController: UIViewController {
         buttonBoard.append(t1)
         buttonBoard.append(t2)
         buttonBoard.append(t3)
+        
+        f1.tag = 1
+        f2.tag = 2
+        f3.tag = 3
+        s1.tag = 4
+        s2.tag = 5
+        s3.tag = 6
+        t1.tag = 7
+        t2.tag = 8
+        t3.tag = 9
     }
     
     @IBAction func gameTapAction(_ sender: UIButton) {
@@ -73,11 +84,15 @@ class ViewController: UIViewController {
         {
             crosseWin += 1
             alertWinMessage(title: "Croses Win this game")
+            PlayerX.text = "Win 0 : \(crosseWin)"
+
         }
         if checkWinMove(NOUGHT)
         {
             noughtWin += 1
             alertWinMessage(title: "Nought Win this game")
+            PlayerO.text = "Win 0 : \(noughtWin)"
+
         }
         if(checkWholeGameBoard()) {
             alertWinMessage(title: "this game is Draw !")
@@ -106,6 +121,13 @@ class ViewController: UIViewController {
                 playerTurnLbl.text = NOUGHT
             }
             sender.isEnabled = false
+            arrayButton.append(sender.tag)
+            var startPlayerTurn = ""
+            if FirstUserTurn == .Cross {
+                startPlayerTurn = "X"
+            } else {
+                startPlayerTurn = "O"
+            }
         }
     }
     
@@ -171,9 +193,142 @@ class ViewController: UIViewController {
     func buttonSymbol(_ button: UIButton, _ symbol : String) -> Bool {
         return button.title(for: .normal) == symbol
     }
+    
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        
+        if let _ = arrayButton.last {
+            
+        if motion == .motionShake {
+            undoGameState()
+            var playerturn = ""
+            if(CurrentUserTurn == playerTurn.Nought) {
+                CurrentUserTurn = playerTurn.Cross
+                playerTurnLbl.text = CROSS
+                playerturn = "X"
+
+            }
+            else if(CurrentUserTurn == playerTurn.Cross) {
+                CurrentUserTurn = playerTurn.Nought
+                playerTurnLbl.text = NOUGHT
+                playerturn = "O"
+            }
+        }
+    }
+    
+    func undoGameState() {
+        for button in buttonBoard {
+            if button == f1 {
+                button.setTitle(nil, for: .normal)
+                button.isEnabled = true
+            }
+            if button == f2 {
+                button.setTitle(nil, for: .normal)
+                button.isEnabled = true
+            }
+            if button == f3 {
+                button.setTitle(nil, for: .normal)
+                button.isEnabled = true
+            }
+            if button == s1 {
+                button.setTitle(nil, for: .normal)
+                button.isEnabled = true
+            }
+            if button == s2 {
+                button.setTitle(nil, for: .normal)
+                button.isEnabled = true
+            }
+            if button == s3 {
+                button.setTitle(nil, for: .normal)
+                button.isEnabled = true
+            }
+            if button == t1 {
+                button.setTitle(nil, for: .normal)
+                button.isEnabled = true
+            }
+            if button == t2 {
+                button.setTitle(nil, for: .normal)
+                button.isEnabled = true
+            }
+            if button == t3 {
+                button.setTitle(nil, for: .normal)
+                button.isEnabled = true
+            }
+        }
+    }
+    
+        func leftRightSwipeGesture(_ sender: UISwipeGestureRecognizer) {
+        switch sender.direction {
+        case .right:
+            let msg = "want to reset game ?"
+            let alertControl = UIAlertController(title: title, message: msg, preferredStyle: .actionSheet)
+            alertControl.addAction(UIAlertAction(title: "Reset", style: .default, handler: { (_) in
+                self.resetGameBoard()
+                self.PlayerX.text = "Win X :"
+                self.PlayerO.text = "Win O :"
+              //  CoreDataHelp.instance.resetCoreData()
+            }))
+            self.present(alertControl, animated: true)
+            
+        case .left:
+            let message = "RESET GAME?"
+            let alertc = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+            alertc.addAction(UIAlertAction(title: "Reset", style: .default, handler: { (_) in
+                self.resetGameBoard()
+                self.PlayerX.text = "Win X :"
+                self.PlayerO.text = "Win O :"
+            //    CoreDataHelp.instance.resetCoreData()
+            }))
+            self.present(alertc, animated: true)
+            
+        default:
+            break
+        }
+    }
+    
+    func toMove(index : Int) -> playerMove {
+        var move = playerMove.f1
+        if index == 1 {
+            move = .f1
+        } else if index == 2 {
+            move = .f2
+        } else if index == 3 {
+            move = .f3
+        } else if index == 4 {
+            move = .s1
+        } else if index == 5 {
+            move = .s2
+        } else if index == 6 {
+            move = .s3
+        } else if index == 7 {
+            move = .t1
+        } else if index == 8 {
+            move = .t2
+        } else if index == 9 {
+            move = .t3
+        }
+        return move
+    }
+    
+    func nextMoveEnum(move : String) ->  playerTurn {
+        if move == "X" {
+            return playerTurn.Nought
+        } else {
+            return playerTurn.Cross
+        }
+        
+    }
+    
+    func getNextMove(move : String) -> String {
+        if move == "X" {
+            return "O"
+        } else {
+            return "X"
+        }
+    }
 }
 
 enum playerMove : String {
+    
     case f1
     case f2
     case f3
@@ -183,6 +338,7 @@ enum playerMove : String {
     case t1
     case t2
     case t3
+
 }
 
-
+}
